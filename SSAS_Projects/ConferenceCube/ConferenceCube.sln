@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ConferenceCube", "ConferenceCube.dwproj", "{A5ADB8EA-ECF1-BC47-4E93-05C5BB4A3345}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5ADB8EA-ECF1-BC47-4E93-05C5BB4A3345}.Development|Default.ActiveCfg = Development
+		{A5ADB8EA-ECF1-BC47-4E93-05C5BB4A3345}.Development|Default.Build.0 = Development
+		{A5ADB8EA-ECF1-BC47-4E93-05C5BB4A3345}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5268D835-2C07-4DE4-9E68-DEDC7DAE3F1E}
+	EndGlobalSection
+EndGlobal

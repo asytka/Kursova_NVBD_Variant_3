@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2a62f7c4-efcc-4776-ad3f-8662e64729ce" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Presentations</ID>
+  <Name>Fact Presentations</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="df632aa0-2b7d-490b-b87a-a659b7fb3b1c">
+    <DataSourceViewID>ConferenceDW_DSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="725aa58e-f34d-4a25-854a-48008ff67184">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4713cbc8-3651-49b8-884c-6dcf99bfe454">
+      <ID>Presentation Key</ID>
+      <Name>Presentation Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="981b5a65-a44e-4a7c-a7e5-695aa9b3c2a1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d958ebb9-f5dd-4785-9a7a-a4ed22367468">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>PresentationKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="68eb145c-f677-4b04-9ade-2de862b6b841">
+          <AttributeID>Room Key</AttributeID>
+          <Name>Room Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27c9bbe6-1d4e-4651-9d72-83ad23aeadbf">
+          <AttributeID>Presenter Key</AttributeID>
+          <Name>Presenter Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7c4cf61c-bf87-43fd-bb67-6235cb9051c7">
+          <AttributeID>Conference Key</AttributeID>
+          <Name>Conference Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9b770fb5-ee6c-4c0b-b5e2-d86f88e8dcb0">
+          <AttributeID>Section Key</AttributeID>
+          <Name>Section Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a394ad8d-e392-4af2-b9a3-0546b4351b6f">
+          <AttributeID>Time Key</AttributeID>
+          <Name>Time Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4de312b5-dcd7-4c9e-9e18-98dd996b04fd">
+      <ID>Room Key</ID>
+      <Name>Room Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42f3e8a5-c323-4556-93de-7938a1fd8b87">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62973bb8-2e0c-4e11-a783-a28e9a9c9088">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>RoomKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="169fec6b-0542-4df6-a450-c18ee12c1253">
+      <ID>Presenter Key</ID>
+      <Name>Presenter Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa0c1315-66f5-4168-9ddc-6b4a8d5bdd00">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b926509-3813-40a7-95df-82b582a83ed4">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>PresenterKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90329161-7a01-4de1-a9ed-6cb42d3b91ca">
+      <ID>Conference Key</ID>
+      <Name>Conference Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="972e5612-e09a-4715-9075-cced01d21bfb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17ee5770-1715-4aa1-b7f2-53d79e692ba6">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>ConferenceKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02718df4-3736-4739-99a3-c48e3eb09838">
+      <ID>Section Key</ID>
+      <Name>Section Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee44f951-0687-4606-beba-710bff6e7373">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="450cfe15-f6be-4f56-9ecc-f6953646106d">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>SectionKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="92242dac-9d4e-4c1d-8b73-e6f2b982ee22">
+      <ID>Time Key</ID>
+      <Name>Time Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae66c8b5-6eb9-49ae-8e12-b6f3afaa7a00">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc42771b-71eb-43ab-b425-3429b3a8c751">
+            <TableID>dbo_FactPresentations</TableID>
+            <ColumnID>TimeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

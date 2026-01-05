@@ -1,0 +1,432 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="039e0e6e-d6b8-42c9-bef3-7c9cdc740307" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Room</ID>
+  <Name>Room</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1356" scrolltop="-3384" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6985" y="11769" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimRoom" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4233" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008910000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimRoom" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1356</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3384</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6f086e3e-2f77-4f4d-a753-63d8f0f7c519">
+    <DataSourceViewID>ConferenceDW_DSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="5e94f2d7-2500-4555-a459-0c5e54dc02d0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="99d05288-0f63-4c7f-8467-d5dd63961dae">
+      <ID>Room Key</ID>
+      <Name>Room Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1682a858-65cc-41b3-a46a-46c31d10c6b9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32d4478d-8277-4e2a-ae42-273d7e330b5f">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e282c4ec-beb7-4b33-8e12-f557bea2b7d8">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8437127b-74cb-4baf-81e3-bf25d5801768">
+          <TableID>dbo_DimRoom</TableID>
+          <ColumnID>RoomName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b036afcb-741b-4aa3-9db6-4e40424b83b4">
+          <AttributeID>Room ID</AttributeID>
+          <Name>Room ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2ad96251-8fc0-4b90-ac1c-eb6351e7b21e">
+          <AttributeID>Room Number</AttributeID>
+          <Name>Room Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2d89a97-b210-4522-b1a5-90c3ff0645fe">
+          <AttributeID>Building</AttributeID>
+          <Name>Building</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2eae5dd-c211-4341-8465-1f0c07f3e491">
+          <AttributeID>Floor</AttributeID>
+          <Name>Floor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a96061e3-e20b-4ff5-bab3-c0972b8b478d">
+          <AttributeID>Capacity</AttributeID>
+          <Name>Capacity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4afce4c8-8e32-4c27-8c9c-8c9a106676df">
+          <AttributeID>Room Type</AttributeID>
+          <Name>Room Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3859590a-c841-455d-84b8-72ba9872e17d">
+          <AttributeID>Has Projector</AttributeID>
+          <Name>Has Projector</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="62ccf598-ee24-48de-b615-11d970b0ce3d">
+          <AttributeID>Has Whiteboard</AttributeID>
+          <Name>Has Whiteboard</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d49a6e12-45b7-411f-885b-e78fdebadb59">
+          <AttributeID>Has Internet</AttributeID>
+          <Name>Has Internet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="353111d1-16b4-497e-b464-c4a4a8319643">
+          <AttributeID>Has Microphone</AttributeID>
+          <Name>Has Microphone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2896ddaa-1c0f-4ee7-b839-cca758299359">
+          <AttributeID>Has Video Conference</AttributeID>
+          <Name>Has Video Conference</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="862e361a-9c68-4636-a98a-3364c8013a1c">
+          <AttributeID>Is Accessible</AttributeID>
+          <Name>Is Accessible</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4bd01bf5-0dc0-4879-8c66-d1faee4606f5">
+          <AttributeID>Hourly Rate</AttributeID>
+          <Name>Hourly Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e0f2e22-f278-4796-96e5-c5420d9395be">
+          <AttributeID>Room Full Name DSV</AttributeID>
+          <Name>Room Full Name DSV</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2219b7c8-6bea-4fed-bccf-432f8a6cda27">
+          <AttributeID>Room Size Category DSV</AttributeID>
+          <Name>Room Size Category DSV</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2f85d3e2-8e9d-4f8b-aead-3113ce2d1434">
+      <ID>Room ID</ID>
+      <Name>Room ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e7de9d30-b824-4b41-ab6b-ba707349e16d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbea23e7-73f3-4822-a0cc-39854ac00be7">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7305d8fb-2336-45a7-9880-d0d1f9b53003">
+      <ID>Room Number</ID>
+      <Name>Room Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee758196-12df-4764-bbd2-24edb5afefb4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dffe501a-84bf-448d-b8e2-8bc4d9879dba">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3284f4f1-2c21-40c2-94d4-cb2b0518e903">
+      <ID>Building</ID>
+      <Name>Building</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0de512db-4b10-439e-b5dd-17e4c2dd909b">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a879989-9205-478c-8c14-dac2803106aa">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>Building</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8079718f-ff1c-4ba1-a1c4-fca904ad8f3c">
+      <ID>Floor</ID>
+      <Name>Floor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="acd150a6-e93b-4f08-a54d-429bc794b0d6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c587a0f-1904-45e8-82b4-c24dcc8858d6">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>Floor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f25cd578-fd16-47a6-84af-c6c80a5b0f7b">
+      <ID>Capacity</ID>
+      <Name>Capacity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2175118-109f-4d65-b311-9f7bd6657711">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cb5a1ab-8ff3-40b4-9786-984fcbb7f3a7">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>Capacity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="913fd105-89f6-490e-9ec7-04690cbcf638">
+      <ID>Room Type</ID>
+      <Name>Room Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="84067bde-41c3-41f4-844c-617595993755">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a46025e1-27aa-4dba-86d9-edb84e8b87cc">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76fd92af-f936-410e-b06e-31356ec8535d">
+      <ID>Has Projector</ID>
+      <Name>Has Projector</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99ba8274-4940-4218-8db9-7bd057411c96">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="096560a0-8e08-4747-8c91-fb33cb064d7e">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HasProjector</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbaba471-f4f7-4738-8096-37630ece5a55">
+      <ID>Has Whiteboard</ID>
+      <Name>Has Whiteboard</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3f3a6e5-fd96-490c-87da-1ccab1f2f045">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d18ee4a-17d5-4974-8616-bc6be67e8369">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HasWhiteboard</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65028c0b-12c5-4cea-bac7-c371317d3444">
+      <ID>Has Internet</ID>
+      <Name>Has Internet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e495f506-635c-4145-930c-54d01dbc56cc">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b77ec64-9008-4ee9-acc9-77793738c59b">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HasInternet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f0cf9e2-173a-4de1-b60c-86735866b341">
+      <ID>Has Microphone</ID>
+      <Name>Has Microphone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13f9999f-5daa-4106-a4c3-d126684054c3">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc4f0d2c-8980-4edc-85da-85f20e9f21c4">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HasMicrophone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="134ca7b0-7c5b-4571-9c6b-8b8e8c21a96a">
+      <ID>Has Video Conference</ID>
+      <Name>Has Video Conference</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1184cd83-73c6-471f-8fb4-60de066290b6">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c158c133-bef4-482d-8bf9-83e3e53e2ac2">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HasVideoConference</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0aa21c01-3755-4db3-ab0b-a5e4709e6bbc">
+      <ID>Is Accessible</ID>
+      <Name>Is Accessible</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f4e2b836-d36b-487d-9e37-cace9b66ead1">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c565946e-fd93-4184-93c1-acc9f3fe9b16">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>IsAccessible</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2498c00e-3fe3-4531-a251-820a34afcd23">
+      <ID>Hourly Rate</ID>
+      <Name>Hourly Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33d9e7b4-9af5-4688-b298-2aeff15c8ba2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71fe9cbf-fb72-448d-9947-3903bd32549a">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>HourlyRate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b5f183aa-2471-4ee8-9ced-a40173db539f">
+      <ID>Room Full Name DSV</ID>
+      <Name>Room Full Name DSV</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67bfd812-33b1-46fa-8319-e5fa607577a2">
+          <DataType>WChar</DataType>
+          <DataSize>208</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8153a544-bf7c-434d-b8a0-1e73955c8641">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomFullNameDSV</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="784c1d75-7174-4904-b211-cab8286804f6">
+      <ID>Room Size Category DSV</ID>
+      <Name>Room Size Category DSV</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="36b180c8-4fb9-44d2-92c8-901507be9c33">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34facd36-b6a4-4536-ae19-041713bc1996">
+            <TableID>dbo_DimRoom</TableID>
+            <ColumnID>RoomSizeCategoryDSV</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4469f112-dcb4-40fe-8160-5040fd9917eb">
+      <ID>Hierarchy</ID>
+      <Name>Building Rooms</Name>
+      <Levels>
+        <Level dwd:design-time-name="d1a2ccaa-6a3a-4371-bcb0-0bdfcd25b52a">
+          <ID>Building</ID>
+          <Name>Building</Name>
+          <SourceAttributeID>Building</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f8144d82-7b1a-419d-b212-25b2ab629ea6">
+          <ID>Room Full Name DSV</ID>
+          <Name>Room Full Name DSV</Name>
+          <SourceAttributeID>Room Full Name DSV</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
