@@ -130,4 +130,4 @@ Analytical and academic reports.
 ---
 
 **Author:** Bohush N.A.
-**Course:** NVDB 
+**Course:** NVBD
