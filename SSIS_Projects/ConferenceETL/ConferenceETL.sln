@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ConferenceETL", "ConferenceETL.dtproj", "{ACDE9365-95DB-6F41-0D37-D6294F02AF7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDE9365-95DB-6F41-0D37-D6294F02AF7B}.Development|Default.ActiveCfg = Development
+		{ACDE9365-95DB-6F41-0D37-D6294F02AF7B}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {951B0990-8186-4198-AACC-7F7F15880826}
+	EndGlobalSection
+EndGlobal
