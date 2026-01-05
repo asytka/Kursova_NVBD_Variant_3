@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="ConferenceCube_DS">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=localhost;Initial Catalog=ConferenceCube</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>473a2ce6-3000-4357-91fa-17b19f547640</DataSourceID>
+</RptDataSource>

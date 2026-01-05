@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ConferenceReports", "ConferenceReports.rptproj", "{EE756430-F648-9D83-4D48-8F801FF0CC29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Debug|Default.ActiveCfg = Debug
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Debug|Default.Build.0 = Debug
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Debug|Default.Deploy.0 = Debug
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.DebugLocal|Default.Build.0 = DebugLocal
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Release|Default.ActiveCfg = Release
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Release|Default.Build.0 = Release
+		{EE756430-F648-9D83-4D48-8F801FF0CC29}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00BC3A6E-6CD3-4192-8C25-A8CB95A64E34}
+	EndGlobalSection
+EndGlobal
