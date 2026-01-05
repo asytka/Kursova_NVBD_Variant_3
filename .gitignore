@@ -1,0 +1,32 @@
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn
+
+# SSIS files
+*.conmgr
+*.dtproj.user
+*.ispac
+
+# VS/SSDT files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Output files
+*.rdl.data
+*.asdatabase
+*.dwproj.user
