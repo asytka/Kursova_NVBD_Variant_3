@@ -25,6 +25,9 @@ OLTP → ETL → Data Warehouse → OLAP Cube → Reports
 ---
 
 ## Database
+Database schema:
+
+<img width="847" height="782" alt="DatabaseSchema" src="https://github.com/user-attachments/assets/1ba6e0b3-5b25-4760-95d3-85fed850f942" />
 
 ### Database/
 Contains scripts for creating and managing the operational database.
