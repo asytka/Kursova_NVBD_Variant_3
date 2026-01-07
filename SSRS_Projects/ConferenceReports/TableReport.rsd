@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Conference'[Conference Name], 'Conference'[Start Date], 'Conference'[Location], 'Room'[Capacity], 'Academic'[Full Name Title DSV])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Conference</DimensionName>
+                    <HierarchyName>Conference Name</HierarchyName>
+                    <HierarchyUniqueName>[Conference].[Conference Name]</HierarchyUniqueName>
+                    <LevelName>Conference Name</LevelName>
+                    <UniqueName>[Conference].[Conference Name].[Conference Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Conference Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Conference</DimensionName>
+                    <HierarchyName>Start Date</HierarchyName>
+                    <HierarchyUniqueName>[Conference].[Start Date]</HierarchyUniqueName>
+                    <LevelName>Start Date</LevelName>
+                    <UniqueName>[Conference].[Start Date].[Start Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Start Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Conference</DimensionName>
+                    <HierarchyName>Location</HierarchyName>
+                    <HierarchyUniqueName>[Conference].[Location]</HierarchyUniqueName>
+                    <LevelName>Location</LevelName>
+                    <UniqueName>[Conference].[Location].[Location]</UniqueName>
+                  </ID>
+                  <ItemCaption>Location</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Room</DimensionName>
+                    <HierarchyName>Capacity</HierarchyName>
+                    <HierarchyUniqueName>[Room].[Capacity]</HierarchyUniqueName>
+                    <LevelName>Capacity</LevelName>
+                    <UniqueName>[Room].[Capacity].[Capacity]</UniqueName>
+                  </ID>
+                  <ItemCaption>Capacity</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Academic</DimensionName>
+                    <HierarchyName>Full Name Title DSV</HierarchyName>
+                    <HierarchyUniqueName>[Academic].[Full Name Title DSV]</HierarchyUniqueName>
+                    <LevelName>Full Name Title DSV</LevelName>
+                    <UniqueName>[Academic].[Full Name Title DSV].[Full Name Title DSV]</UniqueName>
+                  </ID>
+                  <ItemCaption>Full Name Title DSV</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>ConferenceCube</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Conference'[Conference Name], 'Conference'[Start Date], 'Conference'[Location], 'Room'[Capacity], 'Academic'[Full Name Title DSV])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Conference_Name">
+        <DataField>Conference[Conference Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Start_Date">
+        <DataField>Conference[Start Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Location">
+        <DataField>Conference[Location]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Capacity">
+        <DataField>Room[Capacity]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name_Title_DSV">
+        <DataField>Academic[Full Name Title DSV]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

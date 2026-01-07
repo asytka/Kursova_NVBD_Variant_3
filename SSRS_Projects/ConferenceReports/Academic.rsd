@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Academic'[Academic Degree], 'Academic'[University], 'Academic'[Full Name Title DSV])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Academic</DimensionName>
+                    <HierarchyName>Academic</HierarchyName>
+                    <HierarchyUniqueName>[Academic].[Academic]</HierarchyUniqueName>
+                    <LevelName>Academic Degree</LevelName>
+                    <UniqueName>[Academic].[Academic].[Academic Degree]</UniqueName>
+                  </ID>
+                  <ItemCaption>Academic Degree</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Academic</DimensionName>
+                    <HierarchyName>Academic</HierarchyName>
+                    <HierarchyUniqueName>[Academic].[Academic]</HierarchyUniqueName>
+                    <LevelName>University</LevelName>
+                    <UniqueName>[Academic].[Academic].[University]</UniqueName>
+                  </ID>
+                  <ItemCaption>University</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Academic</DimensionName>
+                    <HierarchyName>Academic</HierarchyName>
+                    <HierarchyUniqueName>[Academic].[Academic]</HierarchyUniqueName>
+                    <LevelName>Full Name Title DSV</LevelName>
+                    <UniqueName>[Academic].[Academic].[Full Name Title DSV]</UniqueName>
+                  </ID>
+                  <ItemCaption>Full Name Title DSV</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>ConferenceCube</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Academic'[Academic Degree], 'Academic'[University], 'Academic'[Full Name Title DSV])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Academic_Degree">
+        <DataField>Academic[Academic Degree]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="University">
+        <DataField>Academic[University]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name_Title_DSV">
+        <DataField>Academic[Full Name Title DSV]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

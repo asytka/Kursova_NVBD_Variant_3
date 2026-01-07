@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE 
+VAR Table1 = 
+    ADDCOLUMNS(
+        SUMMARIZECOLUMNS(
+            'Academic'[Country],
+            'Academic'[University],
+            'Academic'[Full Name Title DSV],
+            'Academic'[Academic Degree],
+            "Value1", [Actual Participants]
+        ),
+        "MeasureLabel", "Actual Participants",
+        "MeasureValue", [Value1]
+    )
+VAR Table2 = 
+    ADDCOLUMNS(
+        SUMMARIZECOLUMNS(
+            'Academic'[Country],
+            'Academic'[University],
+            'Academic'[Full Name Title DSV],
+            'Academic'[Academic Degree],
+            "Value2", [Duration Minutes]
+        ),
+        "MeasureLabel", "Duration Minutes", 
+        "MeasureValue", [Value2]
+    )
+RETURN
+UNION(Table1, Table2)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Country">
+        <DataField>Academic[Country]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="University">
+        <DataField>Academic[University]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name_Title_DSV">
+        <DataField>Academic[Full Name Title DSV]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Academic_Degree">
+        <DataField>Academic[Academic Degree]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ID_Value1_">
+        <DataField>[Value1]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="ID_MeasureLabel_">
+        <DataField>[MeasureLabel]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ID_MeasureValue_">
+        <DataField>[MeasureValue]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

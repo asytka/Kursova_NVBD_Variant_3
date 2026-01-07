@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Room'[Building], 'Room'[Capacity], 'Room'[Room Type], 'Room'[Room Full Name DSV])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Room</DimensionName>
+                    <HierarchyName>Building</HierarchyName>
+                    <HierarchyUniqueName>[Room].[Building]</HierarchyUniqueName>
+                    <LevelName>Building</LevelName>
+                    <UniqueName>[Room].[Building].[Building]</UniqueName>
+                  </ID>
+                  <ItemCaption>Building</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Room</DimensionName>
+                    <HierarchyName>Capacity</HierarchyName>
+                    <HierarchyUniqueName>[Room].[Capacity]</HierarchyUniqueName>
+                    <LevelName>Capacity</LevelName>
+                    <UniqueName>[Room].[Capacity].[Capacity]</UniqueName>
+                  </ID>
+                  <ItemCaption>Capacity</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Room</DimensionName>
+                    <HierarchyName>Room Type</HierarchyName>
+                    <HierarchyUniqueName>[Room].[Room Type]</HierarchyUniqueName>
+                    <LevelName>Room Type</LevelName>
+                    <UniqueName>[Room].[Room Type].[Room Type]</UniqueName>
+                  </ID>
+                  <ItemCaption>Room Type</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Room</DimensionName>
+                    <HierarchyName>Building Rooms</HierarchyName>
+                    <HierarchyUniqueName>[Room].[Building Rooms]</HierarchyUniqueName>
+                    <LevelName>Room Full Name DSV</LevelName>
+                    <UniqueName>[Room].[Building Rooms].[Room Full Name DSV]</UniqueName>
+                  </ID>
+                  <ItemCaption>Room Full Name DSV</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>ConferenceCube</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Room'[Building], 'Room'[Capacity], 'Room'[Room Type], 'Room'[Room Full Name DSV])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Building">
+        <DataField>Room[Building]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Capacity">
+        <DataField>Room[Capacity]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Room_Type">
+        <DataField>Room[Room Type]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Room_Full_Name_DSV">
+        <DataField>Room[Room Full Name DSV]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
