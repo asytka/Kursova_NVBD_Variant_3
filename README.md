@@ -97,9 +97,13 @@ Multidimensional cube for analytics.
 ### SSRS_Projects/ConferenceReports
 Analytical and academic reports.
 
-- `Conference_Schedule.rdl` – Conference schedule report
-- `Report1.rdl` – Analytical report
-- `AcademicReport.pdf` – Final coursework report
+- `PieChart.rdl` – Pie chart report
+- `ColumnChart.rdl` - Column chart report
+- `LineChart.rdl` - Line chart report
+- `BarChart.rdl` - Bar chart report
+- `Dashboard.rdl` - Dashboard report
+- `TableReport.rdl` - Table report
+- `MatrixReport.rdl` - Matrix report
 
 ---
 
